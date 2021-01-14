@@ -1,0 +1,14 @@
+<body class="text-center">
+    <form class="form-signin" [formGroup]="form">
+        <img class="mb-4" src="../../../assets/register-logo.svg" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Please register</h1>
+        <label for="inputEmail" class="sr-only">Enter Name</label>
+        <input type="text" id="inputName" formControlName="inputName" class="form-control" placeholder="Name" required autofocus>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" formControlName="inputEmail" class="form-control" placeholder="Email address" required>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" formControlName="inputPassword" class="form-control" placeholder="Password" required>
+        <button class="btn btn-lg btn-warning btn-block" [disabled]="!form.valid" (click)="register()" type="submit">Register</button>
+        <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
+    </form>
+</body>
