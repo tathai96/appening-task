@@ -36,7 +36,7 @@ import { NgxSmartModalModule } from 'ngx-smart-modal';
     NgxSmartModalModule.forRoot(),
     ToastrModule.forRoot({
       'timeOut': 2000,
-      'positionClass': 'toast-top-right',
+      'positionClass': 'toast-bottom-center',
       'preventDuplicates': true
     })
   ],

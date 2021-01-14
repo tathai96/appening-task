@@ -36,7 +36,7 @@ export class RegisterComponent implements OnInit {
 
   register() {
     console.log(this.form.value);
-    let currentUsers: any[] = (JSON.parse(localStorage.getItem('usersList')));
+    let currentUsers: any[] = (JSON.parse(localStorage.getItem('usersList'))) || [];
     if(currentUsers.find(s => s.inputEmail === this.form.value.inputEmail)) {
       this.toastr.error('User already registered with same email address');
     } else {
